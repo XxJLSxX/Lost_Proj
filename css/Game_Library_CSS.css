@@ -1,0 +1,625 @@
+body {
+    font-family: "Century Gothic" !important;
+    margin: 0;
+}
+
+#section {
+    background-color: #15181d;
+    height: 100vh;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-library-container {
+    margin-top: 6vh;
+    width: 85vw;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+}
+
+.library-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.library-title {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.library-title p {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.game-sort-options {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+.sort-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sort-controls a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #2d333d;
+    padding: 6px 20px 6px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.sort-controls a:hover {
+    background-color: #454d5c;
+}
+
+.sort-controls p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0%;
+}
+
+.sort-controls form {
+    margin-bottom: 2px;
+}
+
+.sort-controls form select {
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    background-color: #2d333d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 7px 10px 7px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.game-records {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.game-entry {
+    width: 100%;
+    height: 19%;
+    background-color: #1d2128;
+    border: 2px solid #101216;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+}
+
+.game-entry:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.game-image-container {
+    height: auto;
+    width: 15%;
+}
+
+.game-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15.09%;
+    z-index: 2;
+}
+
+.game-image-container::after {
+    left: 0;
+    background: linear-gradient(to left, #1d2128, transparent);
+}
+
+.game-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-details-container {
+    width: 85%;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-title-section {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 98%;
+    padding-left: 2%;
+}
+
+.game-title-section .game-lib-title {
+    font-size: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.game-info-section {
+    width: 98%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.game-info-section .game-developer {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 3.5px;
+}
+
+.game-info-section .game-genre {
+    background-color: #2d333d;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    margin: 0;
+    margin-left: 25px;
+}
+
+.usergame-records {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.usergame-entry {
+    width: 100%;
+    height: 19%;
+    background-color: #1d2128;
+    border: 2px solid #101216;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.usergame-entry:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.usergame-image-container {
+    height: auto;
+    width: 15%;
+}
+
+.usergame-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15.09%;
+    z-index: 2;
+}
+
+.usergame-image-container::after {
+    left: 0;
+    background: linear-gradient(to left, #1d2128, transparent);
+}
+
+.usergame-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.usergame-details-container {
+    width: 85%;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.usergame-title-section {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 98%;
+    padding-left: 2%;
+}
+
+.usergame-title-section .usergame-title {
+    font-size: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.usergame-info-section {
+    width: 98%;
+    height: 55%;
+    display: flex;
+    padding-left: 2%;
+}
+
+.usergame-info-section .usergame-developer {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 3.5px;
+}
+
+.usergame-info-section .usergame-genre {
+    background-color: #2d333d;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    margin: 0;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.pagination-links {
+    height: 5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination-links-buttons {
+    text-decoration: none;
+    color: white;
+}
+
+.pagination-links-buttons:active {
+    color: #ffeb54;
+}
+
+.page-highlight {
+    text-decoration: none;
+    color: #ffeb54;
+    font-weight: bolder;
+}
+
+.library-add-button {
+    text-decoration: none;
+    color: white;
+    background-color: #3cad54;
+    padding: 6px 20px 6px 20px;
+    border-radius: 15px;
+    margin-left: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.library-add-button:hover {
+    background-color: #319146;
+}
+
+.rating {
+    padding-left: 25px;
+}
+
+.star {
+    color: #ccc;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.popup-area {
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(16, 16, 16, 0.757);
+    display: flex;
+
+    margin: 0;
+    z-index: 1001;
+    position: fixed;
+    visibility: hidden;
+}
+
+.popup-con {
+    width: 30%;
+    height: fit-content;
+    background-color: #303640;
+    position: absolute;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, top 0.3s;
+}
+
+.popup-con-open {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.popup-title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popup-links {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.popup-title p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.cancel-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #323232;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0%;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.cancel-delete:hover {
+    background-color: #232323;
+}
+
+.continue-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #FF3939;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0%;
+    padding: 5px 10px 5px 10px;
+}
+
+.continue-delete:hover {
+    background-color: #cd2c2c;
+    
+}
+
+.pagination-links {
+    height: 5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination-button {
+    text-decoration: none;
+    color: white;
+}
+
+.pagination-button:active {
+    color: #ffeb54;
+}
+
+.page-highlight {
+    text-decoration: none;
+    color: #ffeb54;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 900px) {
+    .game-library-container {
+        width: 90%;
+    }
+
+    .library-title {
+        width: 30%;
+    }
+
+    .game-sort-options {
+        width: 70%;
+    }
+
+    .sort-controls a {
+        font-size: 10px;
+    }
+
+    .sort-controls form select {
+        font-size: 9.34px;
+    }
+
+    .library-title p {
+        font-size: 25px;
+        margin: 0;
+    }
+    .library-add-button {
+        font-size: 11.34px;
+        padding: 5px 15px 5px 15px;
+    }
+    .game-title-section .game-lib-title {
+        font-size: 18px;
+    }
+    .game-info-section .game-developer {
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .game-info-section .game-genre {
+        font-size: 10px;
+        margin-left: 10px;
+        padding: 3px 8px 3px 8px;
+    }
+    .rating {
+        padding-left: 5px;
+    }
+    .star{
+        font-size: 13px;
+    }
+    .popup-con {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .usergame-title-section .usergame-title {
+        font-size: 15px;
+    }
+
+    .usergame-info-section .usergame-genre {
+        font-size: 10px;
+        padding: 3px 7px 3px 7px;
+        margin-left: 10px;
+    }
+
+    .usergame-info-section .usergame-developer {
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .sort-controls a {
+        display: none !important;
+    }
+    .game-info-section .game-developer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game-title-section .game-lib-title {
+        font-size: 15px;
+    }
+
+    .sort-controls {
+        gap: 5px;
+    }
+
+    .library-title p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .usergame-image-container {
+        width: 20%;
+    }
+
+    .usergame-details-container {
+        width: 80%;
+    }
+
+    .usergame-image-container::after {
+        width: 20.9%;
+    }
+    .popup-con {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sort-controls a {
+        padding: 4.5px 10px 4.5px 10px;
+    }
+
+    .sort-controls form select {
+        padding: 5px 8px 5px 8px;
+    }
+
+    .library-add-button{
+        padding: 3px 10px 3px 10px;
+    }
+
+    .library-title {
+        width: 35%;
+    }
+
+    .game-sort-options {
+        width: 65%;
+    }
+
+    .usergame-title-section .usergame-title {
+        font-size: 14px;
+    }
+
+    .usergame-info-section .usergame-developer {
+        font-size: 10px;
+    }
+    .game-title-section .game-lib-title {
+        font-size: 12px;
+    }
+    .star{
+        font-size: 11px;
+    }
+    .popup-con {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup-con {
+        width: 90%;
+    }
+}

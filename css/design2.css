@@ -1,0 +1,301 @@
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  margin: 0 4px;
+}
+.pagination a:hover {
+  background-color: #6d7b8d;
+  color: white;
+}
+
+.pagination a.active {
+  background-color: #6d7b8d;
+  color: rgb(0, 0, 0);
+}
+
+.pagination a.active:hover {
+  background-color: #444f5d;
+  color: rgb(255, 255, 255);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #282e36;
+  color: white;
+}
+
+#btn button {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #c9744d;
+}
+
+.custom-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+/* Button styles */
+.edit-btn-custom,
+.delete-btn-custom {
+  background-color: #ffda07;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn-custom:hover {
+  background-color: #d4aa1f;
+}
+
+.edit-btn-custom {
+  padding: 7px 14px 7px 14px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.delete-btn-custom {
+  padding: 5px 10px 5px 10px;
+  background-color: #f03f3f;
+}
+
+.delete-btn-custom:hover {
+  background-color: #b93c3c;
+}
+
+.tbl {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  margin-bottom: 1vh;
+  padding: 0;
+  width: 95%;
+  table-layout: fixed;
+  color: white;
+}
+
+.tbl caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+.tbl tr {
+  background-color: #444c56;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.tbl th,
+.tbl td {
+  padding: .625em;
+  text-align: center;
+}
+
+.tbl th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .tbl {
+    border: 0;
+  }
+
+  .tbl thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .tbl tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  .tbl td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .9em;
+    text-align: right;
+    overflow: hidden;
+  }
+
+  .tbl td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .tbl td:last-child {
+    border-bottom: 0;
+  }
+
+  .edit-btn-custom,
+  .delete-btn-custom {
+    padding: 2px;
+    background-color: #ffda07;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .edit-btn-custom:hover {
+    background-color: #d4aa1f;
+  }
+
+  .edit-btn-custom {
+    font-weight: bold;
+    padding: 2.5px 9.9px 2.5px 9.9px;
+  }
+
+  .delete-btn-custom {
+    background-color: #f03f3f;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-table {
+    width: 50vw;
+    height: 60vh;
+    border-collapse: collapse;
+    overflow: auto;
+  }
+
+  .custom-th {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 10vw;
+  }
+
+  .custom-td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 3vw;
+  }
+
+  .custom-th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .custom-tr:hover {
+    background-color: #f9f9f9;
+  }
+
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #4daa53;
+    color: #fff;
+    align-items: center;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .top img {
+    width: 30px;
+    height: auto;
+  }
+
+  .top button {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .top h1 {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .top button{
+    font-size: 8px;
+  }
+
+  .edit-btn-custom,
+  .delete-btn-custom {
+    padding: 2px;
+    background-color: #ffda07;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .edit-btn-custom:hover {
+    background-color: #d4aa1f;
+  }
+
+  .edit-btn-custom {
+    font-weight: bold;
+    padding: 3px 9px 3px 9px;
+  }
+
+  .delete-btn-custom {
+
+    background-color: #f03f3f;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 15px;
+  }
+
+  .delete-btn-custom:hover {
+    background-color: #b93c3c;
+  }
+
+}

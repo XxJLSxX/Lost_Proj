@@ -1,0 +1,584 @@
+body {
+    font-family: "Century Gothic" !important;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------ Admin Index ------------------------------------ */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    background-color: #15181d;
+
+}
+
+.admin-container {
+    margin: 0%;
+    padding-top: 100px;
+    color: white;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.admin-container h1 {
+    font-size: 50px;
+}
+
+.admin-container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    gap: 3%;
+}
+
+.admin-container-flex .card {
+    height: 25%;
+    width: 90%;
+    background-color: #15181d;
+    border: 2px solid #101216;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card img {
+    width: 10%;
+    height: 80%;
+    margin-right: 5%;
+    filter: invert(0%);
+    transition: filter 2s ease;
+    opacity: 0.3;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card:hover {
+    border: 2px solid #ffffff;
+    color: white;
+}
+
+.card:hover img {
+    filter: invert(100%);
+    opacity: 1;
+}
+
+.card:active {
+    background-color: white;
+    color: black;
+}
+
+
+.gamepad,
+.view-dev {
+    margin-top: 16px;
+    position: relative;
+}
+
+.image-png {
+    position: relative;
+}
+
+.gamepad:before {
+    content: "\f11b";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+    font-size: 10vw;
+}
+
+.image-png:before {
+    content: "\f03e";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+    font-size: 10vw;
+}
+
+.view-dev:before {
+    content: "\f085";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+    font-size: 10vw;
+}
+
+
+.select-button {
+    background-color: #999;
+    min-width: 120px;
+    /* Set a minimum width */
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.game-lib {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.add-button {
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #00bf63;
+    min-width: 120px;
+    /* Set a minimum width */
+    padding: 20px 20px;
+    margin-right: 20px;
+    /* Align the button to the left */
+}
+
+a.add-button:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #048648;
+}
+
+.game-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.game-table tr {
+    background: linear-gradient(90deg, rgba(150, 150, 150, 0), rgba(59, 59, 59, 0.92), #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);
+}
+
+.game-table td {
+    border: none;
+    padding: 8px 14px;
+}
+
+.game-table td img {
+    max-width: 200px;
+    /* Limit maximum width of images */
+    max-height: 200px;
+    /* Limit maximum height of images */
+    width: auto;
+    /* Ensure the width adjusts according to the maximum width */
+    height: auto;
+    /* Ensure the height adjusts according to the maximum height */
+    margin: 0 auto;
+    /* Center the image horizontally */
+}
+
+
+.game-table a {
+    background-color: #5d5d5d;
+    min-width: 120px;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 25px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game-table a:hover {
+    color: white;
+    background-color: #999;
+    text-decoration: none;
+}
+
+.delete-button,
+.edit-button {
+    text-decoration: none;
+    margin-left: auto;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin: 0%;
+    padding: 0%;
+    padding: 4px 10px;
+    margin-left: auto;
+
+}
+
+.edit-button {
+    background-color: #d3be48;
+    padding: 4px 21px;
+}
+
+.edit-button:hover {
+    background-color: rgb(180, 166, 38)
+}
+
+.delete-button {
+    background-color: #ee4343;
+    margin-top: 2px;
+    align-self: center;
+}
+
+.delete-button:hover {
+    background-color: #cf3d3d;
+}
+
+.rating {
+    color: #f39c12;
+}
+
+.star {
+    font-size: 20px;
+}
+
+.edit-profile-button:hover {
+    background-color: #777777;
+}
+
+.left-grid .nav-pills a {
+    border-radius: 25px;
+    background-color: #5d5d5d;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.left-grid .nav-pills a:active,
+.left-grid .nav-pills a:hover {
+    border-radius: 25px;
+    background-color: #ababab;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.left-grid .nav-pills>li.active>a,
+.left-grid .nav-pills>li.active>a:focus,
+.left-grid .nav-pills>li.active>a:hover {
+    background-color: #ababab;
+    color: black;
+}
+
+.right-grid table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.right-grid table tr {
+    background-color: #5d5d5d;
+}
+
+.gap-row {
+    height: 20px;
+    /* Adjust the height of the gap */
+}
+
+
+.table-container {
+    max-height: 500px;
+    /* Adjust as needed */
+    overflow-y: auto;
+    padding-right: 10px;
+    /* Add padding to create space between <tr> and scrollbar */
+}
+
+/* Styling for the scrollbar */
+.table-container::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+    padding-right: 16px;
+    /* Adjust padding to match the width of the scrollbar */
+}
+
+/* Styling for the scrollbar track */
+.table-container::-webkit-scrollbar-track {
+    background-color: #3b3b3b;
+    /* Background color of the track */
+    border-radius: 5px;
+}
+
+/* Styling for the scrollbar thumb */
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Border radius of the scrollbar thumb */
+}
+
+.right-grid table tr td {
+    border: none;
+    /* Remove default table cell borders */
+    padding: 14px;
+    /* Adjust cell padding */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Align items with space between */
+    align-items: center;
+    /* Align items vertically */
+}
+
+.view-receipt {
+    display: inline-block;
+    /* Make it inline-block so it respects the alignment */
+    margin-top: 3px;
+    /* Adjust as needed to align vertically */
+    margin-bottom: 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: black;
+    background-color: #dddddd;
+    padding: 6px 30px;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.view-receipt:hover {
+    text-decoration: none;
+    background-color: #cccccc;
+    /* Darken on hover */
+    cursor: pointer;
+    color: black;
+}
+
+.vl {
+    border-left: 3px solid white;
+    height: 500px;
+    position: relative;
+}
+
+
+
+.game-panel {
+    height: 180px;
+    width: 290px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 6.8px;
+    /* Add margin to the right of each image */
+}
+
+.pagination-container {
+    width: 100%;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination span {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.pagination .arrow {
+    font-weight: bold;
+}
+
+/* Custom pagination CSS class */
+.custom-pagination {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.custom-pagination .arrow,
+.custom-pagination .page-number {
+    color: white;
+    font-size: 16px;
+}
+
+.custom-pagination .arrow:hover,
+.custom-pagination .page-number:hover {
+    color: #555;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.edit-dev-btn {
+    background-color: #f1bc36;
+    border-radius: 25px;
+    padding: 7px 16px;
+    float: right;
+    color: black;
+    font-size: 16px;
+}
+
+/*--------------------------------------- Admin Session Modals ---------------------------------------*/
+
+#GameAdd-Form .modal-lg {
+    width: 550px;
+}
+
+#EditGame-Form .modal-lg {
+    width: 550px;
+}
+
+#AddGame-Form .modal-lg {
+    width: 550px;
+}
+
+.modal-body {
+    text-align: center;
+    background-color: #6d6c6c;
+    border-radius: 25px;
+    padding: 2%;
+    width: 500px;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body p {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.modal-body select {
+    border-radius: 16.5px;
+    width: 420px;
+    padding: 7.5px;
+    background-color: #dddddd;
+}
+
+.modal-body label {
+    margin-left: 16.5px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    float: left;
+    /* Align text to the left */
+}
+
+.modal-body input {
+    border-radius: 16.5px;
+    width: 420px;
+    padding: 7.5px;
+}
+
+.modal-body textarea {
+    border-radius: 7.5px;
+    padding: 8.5px;
+    width: 420px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.modal-body .submit-button {
+    font-weight: bold;
+    background-color: #ababab;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 170px;
+    /* Adjusted width */
+    display: block;
+    margin-top: 7.5px;
+    margin-left: auto;
+    /* Aligns the button to the right */
+    margin-right: auto;
+}
+
+.modal-body.file-upload {
+    display: none;
+    margin-left: 8px;
+    border-radius: 16.5px;
+    width: 420px;
+    padding: 7.5px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-body #inputFile::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.modal-body input[type='file'] {
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.submit-button:hover {
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 900px) {
+    .admin-container p {
+        font-size: 12px;
+    }
+    .rating {
+        padding-left: 5px;
+    }
+    .star{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .admin-container p {
+        display: none;
+    }
+
+    .admin-container-flex .card {
+        font-size: 20px;
+    }
+
+    .delete-button,
+    .edit-button {
+        font-size: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .edit-button {
+        background-color: #d3be48;
+        margin-bottom: 2px;
+        padding: 7px 19px;
+    }
+    .star{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,438 @@
+body {
+  color: #fff;
+  font-family: "Century Gothic" !important;
+  margin: 0;
+
+}
+
+html {
+  background-color: #1d2128;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+
+.dev-prof-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d2128;
+}
+
+.game-dev-section-container {
+
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #15181d;
+}
+
+.top-part-dev-sec {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 5% 0 5%;
+}
+
+.devhead {
+  color: white;
+  margin: 0%;
+  font-size: 40px;
+}
+
+.Dev-AddButton {
+  margin: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  background-color: #3cad54;
+  border: none;
+  padding: 5px;
+}
+
+.Dev-AddButton:hover {
+  background-color: #318e45;
+}
+
+.developer_container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2%;
+  padding: 0% 5% 0% 5%;
+}
+
+.developer_card {
+  height: 30%;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #121212;
+  background-color: #1d2128;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.developer_card:hover {
+  border: 2px solid #ffffff;
+}
+
+.developer_profile-img {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #323e56;
+  position: relative;
+}
+
+.developer_profile-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.developer_profile-img::after {
+  left: 0;
+  background: linear-gradient(to left, #1d2128, transparent);
+}
+
+.developer_profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.developer_card-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  margin: 0;
+  margin-right: auto;
+}
+
+.developer_card-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.developer_btn {
+  display: inline-block;
+  background-color: #3b444f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer_btn:hover {
+  background-color: #e4e4e4;
+  color: black;
+}
+
+
+
+
+
+
+/*-------------------------------------- Developer's Page CSS --------------------------------------*/
+.dev-pagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: fit-content;
+}
+
+.dev-gamecontainer {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100svw;
+  height: fit-content;
+  text-align: center;
+  margin: 0;
+}
+
+.dev-gamecontainer-games {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  gap: 20px;
+}
+
+.dev-gamecontainer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  border: 2px solid #101216;
+}
+
+.dev-gamecontainer-main:hover {
+  border: 2px solid #ffffff;
+}
+
+.devbanner-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.devbanner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,
+      rgba(150, 150, 150, 0),
+      rgba(59, 59, 59, 0),
+      rgba(23, 23, 23, 0.1),
+      #15181d,
+      #15181d,
+      #15181d) left,
+    linear-gradient(to right,
+      rgba(150, 150, 150, 0),
+      rgba(59, 59, 59, 0),
+      rgba(23, 23, 23, 0.1),
+      #15181d,
+      #15181d,
+      #15181d) right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.devbanner-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-dev {
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: white;
+  font-size: 19px;
+  background-color: #3c495f;
+  margin: 0;
+  border: none;
+}
+
+.user-dev.active,
+.user-dev:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(189, 196, 212);
+  font-weight: bold;
+}
+
+.edit-dev-btn {
+  border-radius: 25px;
+  padding: 7px 16px;
+  float: right;
+  font-size: 16px;
+  border: none;
+  background-color: #f1bc36;
+  color: black;
+}
+
+.edit-dev-btn:hover {
+  background-color: #d3be48;
+  color: rgb(255, 255, 255);
+}
+
+.devGames {
+  all: unset;
+}
+
+.dev_pageDisplayIMG {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #101216;
+  cursor: pointer;
+}
+
+.dev_pageDisplayIMG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.devPage_gameTitle {
+  color: white;
+  text-align: center;
+  margin: 0%;
+  margin-top: 20px;
+}
+
+.devPage_Description {
+  color: white;
+  text-align: justify;
+  text-indent: 40px;
+  margin: 0%;
+}
+
+.top-dev-prof {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+  padding: 20px;
+  margin: 0%;
+  background-color: #22262f;
+}
+
+.top-dev-prof img {
+  width: 125px;
+  height: 125px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.top-dev-prof p,
+.top-dev-prof h1 {
+  margin: 0%;
+}
+
+.dev-selection {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  margin: 0;
+  padding: 15px 0 20px 0;
+}
+
+.dev-buttons {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 2%;
+}
+
+.dev-data{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+@media screen and (max-width: 900px) {
+  .top-dev-prof {
+    flex-direction: column;
+  }
+  .dev-data{
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .edit-dev-btn {
+    margin-top: 15px;
+  }
+  .dev-selection {
+    gap: 4%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .devhead {
+    font-size: 30px;
+  }
+
+  .developer_card-title {
+    font-size: 15px;
+  }
+
+  .dev-buttons {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .developer_btn {
+    font-size: 14px;
+  }
+
+  .Dev-AddButton {
+    font-size: 14px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .developer_btn {
+    font-size: 12px;
+  }
+
+  .dev-buttons {
+    width: 35%;
+  }
+
+  .developer_card-title {
+    font-size: 12px;
+  }
+
+  .devhead {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .devhead {
+    font-size: 20px;
+  }
+}

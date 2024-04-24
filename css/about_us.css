@@ -1,0 +1,74 @@
+body{
+    font-family: "Century Gothic" !important;
+    color: white;
+    background-color: #15181d;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+.aboutus-section{
+    height: fit-content;
+    max-height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.aboutus-section h1{
+    color: white;
+    margin: 0;
+    width: 90%;
+}
+
+.About_Us-container1{
+    background-color: #292f38;
+    width: 90%;
+    height: fit-content;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+
+.About_Us-container2{
+    background-color: #292f38;
+    width: 90%;
+    height: fit-content;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.About_Us-container2 .contact{
+    background-color: #a4b0c5;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
+}
+
+.About_Us-container2 .contact:hover{
+    background-color: #5c6677;
+    color: white;
+}
+.About_Us-container2 a{
+    margin: 0;
+}

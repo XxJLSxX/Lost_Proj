@@ -1,0 +1,248 @@
+body {
+    font-family: "Century Gothic" !important;
+}
+/*---------------------------------------------------------------------- Transaction Records ----------------------------------------------------------------------*/
+.transaction-sec{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #15181d;
+}
+
+.transaction-sec .trans-head {
+    color: white;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 90%;
+    font-size: 40px;
+}
+
+
+#transaction-records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 0 5% 0 5%;
+}
+
+#transaction-records h1 {
+    color: black;
+    margin: 0;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#transaction-filters {
+    border-right: 2px solid white;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#transaction-filters button {
+    background-color: #3c495f;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 95%;
+}
+
+#transaction-filters form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#transaction-filters button:hover {
+    background-color: rgb(189, 196, 212);
+    color: rgb(0, 0, 0);
+}
+
+#transaction-list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    overflow: auto;
+    gap: 10px;
+}
+
+.transaction {
+    background-color: #d8e3f5;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.transaction .transaction-left{
+    width: 70%;
+    padding: 10px 30px;
+}
+.transaction .transaction-right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+    
+}
+
+.transaction-left h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.transaction-left p {
+    margin: 0;
+    color: black;
+    font-size: 15px;
+}
+
+.transaction-right p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+
+.transaction button {
+    background-color: #7d8daa;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.transaction button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#transaction-list::-webkit-scrollbar{
+    width: 10px;
+}
+#transaction-list::-webkit-scrollbar-track{
+    background-color: #1d2128;
+    border-radius: 10px;
+}
+
+#transaction-list::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #0e1013;
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+@media screen and (max-width: 900px) {
+    #transaction-records {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #transaction-filters {
+        flex-direction: row;
+        height: 8%;
+        width: 100%;
+        gap: 7px;
+        border: none;
+        padding-bottom: 10px;
+        border-bottom: 2px solid white;
+        text-align: center;
+    }
+    #transaction-list {
+        width: 100%;
+    }
+    #transaction-records {
+        height: 80%;
+    }
+    .transaction-sec .trans-head{
+        font-size: 30px;
+        margin-top: 8%;
+    }
+
+    #transaction-filters button {
+        width: auto;
+    }
+    #transaction-filters button {
+        font-size: 13px;
+        padding: 7px 20px;
+    }
+    #transaction-list {
+        padding: 0 5px 0 5px;
+    }
+    #transaction-filters form {
+        flex-direction: row;
+    }
+    
+
+}
+@media screen and (max-width: 800px) {
+    
+}
+@media screen and (max-width: 600px) {
+    .transaction-right p{
+        font-size: 18px;
+    }
+    .transaction-left h2 {
+        font-size: 15px;
+    }
+    
+    .transaction-left p {
+        font-size: 12px;
+    }
+    .transaction .transaction-left{
+        width: 65%;
+    }
+    .transaction .transaction-right{
+        width: 35%;
+        gap: 0px;
+    }
+    #transaction-filters button {
+        font-size: 13px;
+        padding: 5px 18px;
+    }
+   
+}
+@media screen and (max-width: 550px) {
+    .transaction-left h2 {
+        font-size: 13px;
+    }
+    
+    .transaction-left p {
+        font-size: 10px;
+    }
+    .transaction-right p{
+        font-size: 15px;
+    }
+    .transaction .transaction-left{
+        width: 65%;
+    }
+    .transaction .transaction-right{
+        width: 35%;
+        padding: 10px 0px;
+    }
+    #transaction-filters button {
+        font-size: 10px;
+        padding: 5px 18px;
+    }
+}

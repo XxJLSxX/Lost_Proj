@@ -1,0 +1,1024 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #15181d;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Century Gothic" !important;
+    margin: 0;
+    background-color: #15181d;
+}
+
+/*-----------------------------------------Paging CSS--------------------------------------------------*/
+.page::-webkit-scrollbar {
+    display: none;
+}
+
+.page {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100svh;
+    width: 100%;
+    background-color: #15181d;
+}
+
+section {
+    height: 100svh;
+    width: 100%;
+    scroll-snap-align: center;
+    background-color: #15181d;
+}
+
+/*-----------------------------------------Section1 CSS--------------------------------------------------*/
+#section1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.196) 5%, rgba(16, 16, 16, 0.913) 40%, #15181d 85%), url('../img/bg_top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-1 {
+    margin-top: 3%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-top-con {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-top-con p {
+    padding-left: 6%;
+    padding-right: 5%;
+    color: white;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+.left-top-con img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.right-top-con {
+    width: 45%;
+    height: 100%;
+}
+
+.right-top-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*-----------------------------------------Section2 CSS--------------------------------------------------*/
+#section2 {
+    background-color: #15181d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-2 {
+    margin-top: 2vh;
+    width: 85vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-2 p {
+    width: 100%;
+    color: white;
+    text-align: start;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.wrapper-feat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*------------------------------Feat Carousel-----------------------------*/
+.left-carousel {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="radio"]:checked+.slides {
+    display: block;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0%;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+    /* Ensure arrows appear above the slides */
+}
+
+.left-arrow:hover~.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    /* Adjust gradient width as needed */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.right-arrow:hover~.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    /* Adjust gradient width as needed */
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/*------------------------------Right Wrapper-----------------------------*/
+.right-inner-wrapper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-desc {
+    height: 100%;
+    padding: 3%;
+    width: 100%;
+    background-color: #3b3b3b00;
+    border: 2px solid #101216;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    overflow: hidden;
+}
+
+.game-title {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0%;
+    margin-top: 70px;
+}
+
+.game-dev {
+    color: white;
+    font-size: 17px;
+    margin: 0%;
+    margin-top: auto;
+}
+
+.game-genre {
+    background-color: #2d333d;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+.game-price {
+    color: #42dd04;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.game-link {
+    color: rgb(0, 0, 0);
+    background-color: #a4b0c5;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 8px 5px 8px;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+.game-link:hover {
+    background-color: #454e5d;
+    color: white;
+}
+
+.Link {
+    height: 20%;
+    min-height: 20%;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1c2026;
+}
+
+@media (max-width: 900px) {
+    .right-inner-wrapper {
+        gap: 10px;
+    }
+
+    .wrapper-feat {
+        gap: 10px;
+    }
+}
+
+/*-----------------------------------------Section3 CSS--------------------------------------------------*/
+#section3 {
+    background-color: #15181d;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.game-content-section {
+    width: 100%;
+    height: 85%;
+    background-color: #15181d;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.section-container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+
+.DL-section {
+    width: 100%;
+    height: 50%;
+}
+
+.RG-section {
+    width: 100%;
+    height: 50%;
+}
+
+.Head-title {
+    color: white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+
+.container-content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.game-option {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+
+
+.op-img-con {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(117, 117, 195);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #121212;
+}
+
+.op-img-con:hover {
+    border: 2px solid #ffffff;
+}
+
+.op-img-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.op-img-con img:hover {
+    filter: brightness(80%);
+}
+
+.op-title-con {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*-----------------------------------------Section4 CSS--------------------------------------------------*/
+
+#section4 {
+    background-color: #15181d;
+    height: 100vh;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-4 {
+    margin-top: 6vh;
+    width: 85vw;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.section-title {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-title p {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.sort {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+.sort-contents {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.actived {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.sort-contents a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #2d333d;
+    padding: 6px 20px 6px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.sort-contents a:hover {
+    background-color: #454d5c;
+}
+
+.sort-contents p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0%;
+}
+
+.sort-contents form {
+    margin-bottom: 2px;
+}
+
+.sort-contents form select {
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    background-color: #2d333d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 7px 10px 7px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.records {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.game-container {
+    width: 100%;
+    height: 19%;
+    background-color: #1d2128;
+    border: 2px solid #101216;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.game-container:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.game-img-con {
+    height: auto;
+    width: 15%;
+}
+
+.game-img-con::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15.09%;
+    z-index: 2;
+}
+
+.game-img-con::after {
+    left: 0;
+    background: linear-gradient(to left, #1d2128, transparent);
+
+}
+
+.game-img-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-desc-con {
+    width: 85%;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-desc {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 98%;
+    padding-left: 2%;
+}
+
+.top-desc .game-title-desc {
+    font-size: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.top-desc .game-price-desc {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.bottom-desc {
+    width: 98%;
+    height: 55%;
+    display: flex;
+    padding-left: 2%;
+}
+
+.bottom-desc .game-developer-desc {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 3.5px;
+    margin-bottom: auto;
+}
+
+.bottom-desc .game-genre-desc {
+    background-color: #2d333d;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    margin: 0;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.rating {
+    font-size: 19px;
+    padding-left: 25px;
+}
+
+.star {
+    color: #ccc;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.pagination-links {
+    height: 5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination-button {
+    text-decoration: none;
+    color: white;
+}
+
+.pagination-button:active {
+    color: #ffeb54;
+}
+
+.page-highlight {
+    text-decoration: none;
+    color: #ffeb54;
+    font-weight: bolder;
+}
+
+/*-----------------------------------------Section5 CSS--------------------------------------------------*/
+#section5 {
+    background-color: #15181d;
+    max-height: 100%;
+    position: relative;
+}
+
+.filler {
+    height: 16vh;
+    background-color: #15181d;
+    width: 100%;
+}
+
+.game-dev-sec {
+    background-color: #101010;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.img-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    /* Make sure the container is positioned */
+    overflow: hidden;
+    /* Prevents the gradient from spilling outside the container */
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-container::before,
+.img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    /* Adjust the width of the gradient effect */
+    z-index: 2;
+    /* Ensure it's above the image */
+}
+
+.img-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgb(16, 16, 16), transparent);
+}
+
+.img-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(16, 16, 16), transparent);
+}
+
+.game-dev-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    gap: 2vw;
+}
+
+.dev-title {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.game-dev-content a {
+    text-decoration: none;
+    color: #101010;
+    background-color: #dcd7d7;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.game-dev-content a:hover {
+    background-color: #8a8a8a;
+    color: white;
+}
+
+/*-----------------------------------------Anchor Points CSS--------------------------------------------------*/
+
+.anchor {
+    z-index: 100;
+    padding: 12px 15px 12px 15px;
+    border-radius: 1rem;
+    background-color: #2d333d;
+    right: 1%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.anchor-link {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: none;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.anchor-link:hover:not(.clicked) {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.anchor-link.clicked {
+    cursor: pointer;
+    background-color: #ffeb54;
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 1000px) {
+    .content-2 {
+        height: 80%;
+        margin-top: 5vh;
+        width: 100vw;
+    }
+
+    .content-2 p {
+        font-size: 30px;
+        padding-left: 5%;
+    }
+
+    .right-inner-wrapper {
+        width: 90%;
+        height: 20%;
+    }
+
+    .game-desc {
+        flex-direction: row;
+    }
+
+    .game-dev {
+        display: none !important;
+    }
+
+    .game-genre {
+        display: none !important;
+    }
+
+    .game-title {
+        margin: 0%;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    .game-price {
+        font-size: 15px;
+    }
+
+    .game-link {
+        margin: 0%;
+        font-size: 12px;
+    }
+
+    .wrapper-feat {
+        flex-direction: column;
+    }
+
+    .left-carousel {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .anchor {
+        display: none;
+    }
+
+    .right-top-con {
+        display: none;
+    }
+
+    .left-top-con {
+        width: 100%;
+        gap: 5%;
+    }
+
+    .left-top-con p {
+        font-size: 18px;
+    }
+
+    .content-1 {
+        width: 100%;
+    }
+
+    .section-container {
+        width: 90%;
+    }
+
+    .container-content {
+        height: 70%;
+    }
+
+    .Head-title {
+        font-size: 20px;
+    }
+
+    .op-title-con {
+        font-size: 15px;
+    }
+
+    .game-content-section {
+        padding-top: 10%;
+    }
+
+    .content-4 {
+        width: 90vw;
+    }
+    .section-title p{
+        font-size: 25px;
+        margin: 0;
+    }
+    .section-title{
+        width: 30%;
+    }
+    .sort{
+        width: 70%;
+    }
+    .sort-contents{
+        gap: 10px;
+    }
+    .sort-contents a{
+        font-size: 10px;
+    }
+    .sort-contents form select{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-desc .game-price-desc {
+        margin-right: 1%;
+    }
+
+    .top-desc .game-title-desc {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .bottom-desc .game-developer-desc {
+        font-size: 12px;
+    }
+
+    .bottom-desc .game-genre-desc {
+        font-size: 10px;
+        padding: 3px 7px 3px 7px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game-img-con {
+        width: 20%;
+    }
+
+    .game-desc-con {
+        width: 80%;
+    }
+    .game-img-con::after {
+        width: 20.9%;
+    }
+    .section-title p{
+        font-size: 23px;
+        margin: 0;
+    }
+    .section-title{
+        width: 15%;
+    }
+    .sort{
+        width: 85%;
+    }
+    .sort-contents{
+        gap: 5px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .content-2 {
+        width: 100vw;
+    }
+
+    .game-title {
+        font-size: 12px;
+    }
+
+    .game-price {
+        font-size: 12px;
+    }
+
+    .op-title-con {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .top-desc .game-price-desc {
+        font-size: 15px;
+    }
+    .bottom-desc .game-developer-desc {
+        font-size: 8px;
+    }
+    .rating {
+        font-size: 12px;
+    }
+    .top-desc .game-title-desc {
+        font-size: 13px;
+    }
+    .sort-contents a{
+        padding: 4.5px 10px 4.5px 10px;
+    }
+    .sort-contents form select {
+        padding: 5px 8px 5px 8px;
+    }
+    .dev-title {
+        font-size: 30px;
+    }
+    .game-dev-content a{
+        font-size: 12px;
+    }
+    .sort-contents a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+}

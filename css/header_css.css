@@ -1,0 +1,839 @@
+/*-----------------------------------------Navigation CSS--------------------------------------------------*/
+.nav {
+    background-color: #2d333d;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+
+
+.nav img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.nav-title {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.nav-title:hover {
+    color: #ffec18;
+}
+
+.search-btn {
+    background-color: #444f60;
+
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    padding: 0%;
+    cursor: pointer;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+
+.search-btn:hover {
+    background-color: #4d596a;
+}
+
+.search-btn:active {
+    background-color: #576478;
+}
+
+.search-btn.hide-search-btn {
+    display: none;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.search-btn img {
+    width: 15px;
+    margin: 0%;
+    filter: invert(100%);
+}
+
+.access {
+    margin-left: 15px;
+}
+
+.access-btn {
+    background-color: #DDDDDD;
+    color: black;
+    border: none;
+    padding: 8px;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.access-btn:hover {
+    background-color: #b9b9b9;
+}
+
+.profile-user {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.user-logout {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+.user-logout p {
+    margin: 0%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.user-logout .log-out-hover {
+    font-weight: bold;
+}
+
+.user-logout p:hover {
+    color: #ffeb54;
+}
+
+.user-logout .log-out-hover:hover {
+    color: #ff5454;
+}
+
+.user-logout-admin {
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.user-logout-admin img {
+    aspect-ratio: 1 / 1;
+    width: 35px;
+    margin-left: auto;
+}
+
+.user-logout img {
+    aspect-ratio: 1 / 1;
+    width: 30px;
+    margin-right: 2px;
+}
+
+.profile-user img {
+    aspect-ratio: 1 / 1;
+    width: 33px;
+    margin-right: 2px;
+}
+
+.profile-user:hover {
+    color: rgb(218, 218, 218);
+}
+
+
+/*-----------------------------------------Search Popup CSS--------------------------------------------------*/
+
+.search-popup {
+    margin-left: auto;
+    margin-right: 20px;
+    top: 12px;
+    right: 162px;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s, border-radius 0.3s;
+    border-radius: 15px;
+    display: none;
+}
+
+.open-search-popup {
+    width: 170px;
+    border-radius: 15px;
+}
+
+.search-popup input {
+    padding: 4px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.search-result {
+    width: 350px;
+    height: fit-content;
+    overflow: hidden;
+    position: fixed;
+    background-color: #15181d;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    object-fit: cover;
+    pointer-events:all;
+}
+
+.search-result a {
+    text-decoration: none;
+}
+
+.search-container {
+    width: 100%;
+    height: 50px;
+    background-color: #2d333d;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.search-container:hover {
+    background-color: rgb(57, 64, 76);
+}
+
+.search-img-con {
+    width: 25%;
+    height: auto;
+}
+
+.search-img-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+
+.search-desc p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.search-desc h5 {
+    overflow: hidden;
+    font-size: 13px;
+    margin: 0;
+}
+
+/*-----------------------------------------Popup CSS---------------------------------------------------*/
+.contact-form{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.tits{
+    align-self: start;
+    margin-top: 20px;
+}
+
+
+
+.container {
+    text-align: center;
+    background-color: #5d5d5d;
+    border-radius: 25px;
+    padding: 2%;
+    width: 500px;
+    margin: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body {
+    background-color: #303640;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-textarea{
+    width: 80%;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.modal-body #signin {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 29px;
+    color: white;
+}
+
+.modal-content {
+    background-color: #303640;
+    border-radius: 10px;
+}
+/* Modal End */
+
+label{
+    margin-left: 16.5px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    float: left; 
+}
+
+input{
+    border-radius: 16.5px;
+    width: 80%;
+    padding: 7.5px;
+    border: none;
+}
+
+/* Added CSS for flex container and buttons */
+.flex-container {
+    display: block;
+    margin-top: 20px;
+}
+
+.flex-container p {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container button {
+    margin: 5px;
+}
+
+.login-button,
+.signup-button {
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 7.9px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-left: 16.5px;
+    margin-right: 16.5px;
+}
+
+.login-button {
+    width: 160px; 
+}
+
+.signup-button {
+    background-color: #ff9653;
+    width: 160px; 
+    text-decoration: none;
+}
+.signup-button:hover {
+    background-color: #ff7c00;
+    color: white;
+    text-decoration: none; 
+}
+
+.pindot{
+    background-color: #7189a9;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.pindot:hover{
+    background-color: #b5c3d3;
+}
+
+
+/*-----------------------------------------Receipt Popup CSS--------------------------------------------------*/
+.receipt-container {
+    display: flex;
+    justify-content: center;
+}
+
+.receipt-details {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #303640; 
+    color: #fff;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+hr {
+    margin: 20px 0;
+    
+}
+
+.purchase-id {
+    text-align: right;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.total-price {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.purchase-id {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.details p:nth-child(5) {
+    margin-bottom: 20%;
+}
+
+.receipt-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.dit{
+    color: rgba(255, 255, 255, 0.671);
+}
+.dit strong{
+    color: white;
+}
+
+.purchase-id strong, .total-price strong{
+    color: white;
+}
+
+
+/* ------------------------------------------------------------ Completion Popup ------------------------------------------------------------ */
+.Completion {
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+}
+
+.Completion h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Completion p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.Completion button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #475367; 
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Completion hr {
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Completion button:hover {
+    background-color: #343d4c;
+}
+
+/*--------------------------------------------------------------- Contact Us CSS ---------------------------------------------------------------*/
+
+.limiter {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+strong {
+    color: black;
+}
+
+.Contact-Container{
+    text-align: center; 
+    background-color: #5d5d5d;
+    border-radius: 25px;
+    padding: 2%;
+    width: 500px;
+}
+
+.Contact-Container p{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.Contact-Container label{
+    margin-left: 16.5px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    float: left; /* Align text to the left */
+}
+.Contact-Container input{
+    border-radius: 16.5px;
+    width: 420px;
+    padding: 7.5px;
+}
+.Contact-Container textarea {
+    border-radius: 7.5px;
+    padding: 8.5px;
+    width: 416px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+}
+.submit-button {
+    font-weight: bold;
+    background-color: #ababab;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 170px; /* Adjusted width */
+    display: block;
+    margin-top: 7.5px;
+    margin-left: auto; /* Aligns the button to the right */
+    margin-right: auto;
+}
+.submit-button:hover {
+    background-color: lightgrey;
+}
+
+.About_Us-container2 a {
+    all: unset;
+}
+
+/*------------------------------------------------------------------ User Profile Popup ------------------------------------------------------------------*/
+.user-profile-body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.user-profile-content {
+    padding: 2%;
+    text-align: left;
+    width: 100%;
+
+}
+.user-profile-content h2{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.user-profiling {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 12%;
+    font-size: 20px;
+}
+
+.user-profile-buttons {
+    padding: 5%;
+    width: 100%;
+
+}
+
+.user-profile-buttons a {
+    all: unset;
+}
+
+
+.user-profile-buttons button {
+    all: unset;
+    background-color: #58657a;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border-radius: 20px;
+    color: white;
+}
+
+.user-profile-btn:hover {
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-edit-profile{
+    width: 100%;
+}
+.input-edit-prof{
+    width: 100%;
+}
+
+/*------------------------------------------------------------------ Logout Popup ------------------------------------------------------------------*/
+
+.LogoutConfirm a{
+    all: unset;
+}
+
+/*-------------------------------------------- Menu Bar ------------------------------------------------*/
+.menu-bar {
+    background-color: #15181d00;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    margin-right: 10px;
+    display: none;
+}
+
+.menu-bar:hover {
+    color: #fffc38;
+}
+
+.menubar {
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(16, 16, 16, 0.589);
+    position: absolute;
+    z-index: 1010;
+    display: flex;
+    justify-content: end;
+    visibility: hidden;
+    position: fixed;
+}
+
+.open-menu {
+    visibility: visible;
+}
+
+.burger {
+    width: 30%;
+    height: 100%;
+    background-color: #282e36;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0%;
+    gap: 10px;
+    right: 100%;
+    transform: translate(100%);
+    transition: transform 0.3s, right 0.3s;
+}
+
+.sliding {
+    right: 100%;
+    transform: translate(0%);
+    transition: transform 0.3s, right 0.3s;
+}
+
+.sliding-out {
+    right: 100%;
+    transform: translate(100%);
+
+}
+
+.menu-img-con {
+    width: 100%;
+    height: 25%;
+    background-color: #1e2228;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+
+}
+
+.menu-img-con img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-title {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-title span {
+    color: white;
+}
+
+.menu-title:hover {
+
+    background-color: white;
+    font-weight: bold;
+    color: #000000;
+}
+
+.menu-login {
+    width: 50%;
+    height: 10%;
+}
+
+.logging:hover {
+    background-color: #f2da1f;
+}
+
+.loggingout:hover {
+    background-color: #d43a3a;
+    color: white;
+}
+
+.close {
+    width: 70%;
+    height: 100%;
+}
+.cover-area{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1010;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-left: 10px;
+    pointer-events: none;
+    padding-top: 70px;
+}
+
+.dikit{
+    border-radius: 10px;
+    background-color: #7189a9;
+}
+
+.itim{
+    background-color: #6c757d;
+    color: white;
+    font-weight: normal;
+}
+
+.itim:hover{
+    background-color: #50575d;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .open-search-popup {
+        width: 170px;
+    }
+    .nav-title {
+        display: none;
+    }
+
+    .user-logout {
+        display: none;
+    }
+
+    .search-btn,
+    .search-popup {
+        margin-right: 10px;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .menubar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .burger {
+        width: 45%;
+    }
+
+    .close {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .burger {
+        width: 60%;
+    }
+
+    .close {
+        width: 40%;
+    }
+    .search-result {
+        width: 340px;
+    }
+    .cover-area{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .burger {
+        width: 70%;
+    }
+
+    .close {
+        width: 30%;
+    }
+}
